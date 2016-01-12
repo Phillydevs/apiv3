@@ -8,7 +8,7 @@ flavors by `Runscope <https://www.runscope.com/>`__
 |Deploy|_
 
 .. |Deploy| image:: https://www.herokucdn.com/deploy/button.svg
-.. _Deploy: https://heroku.com/deploy?template=https://github.com/runscope/httpbin
+.. _Deploy: https://heroku.com/deploy?template=https://github.com/phillydevs/apiv3
 
 |Build Status|
 
@@ -57,39 +57,39 @@ Endpoint                                 Description
 `/encoding/utf8`_                        Returns page containing UTF-8 data.
 ======================================   ==================================================================================================================
 
-.. _/user-agent: http://httpbin.org/user-agent
-.. _/headers: http://httpbin.org/headers
-.. _/get: http://httpbin.org/get
-.. _/: http://httpbin.org/
-.. _/ip: http://httpbin.org/ip
-.. _/gzip: http://httpbin.org/gzip
-.. _/deflate: http://httpbin.org/deflate
-.. _/status/:code: http://httpbin.org/status/418
-.. _/response-headers: http://httpbin.org/response-headers?Content-Type=text/plain;%20charset=UTF-8&Server=httpbin
-.. _/redirect/:n: http://httpbin.org/redirect/6
-.. _/redirect-to?url=foo: http://httpbin.org/redirect-to?url=http://example.com/
-.. _/relative-redirect/:n: http://httpbin.org/relative-redirect/6
-.. _/cookies: http://httpbin.org/cookies
-.. _/cookies/set?name=value: http://httpbin.org/cookies/set?k1=v1&k2=v2
-.. _/cookies/delete?name: http://httpbin.org/cookies/delete?k1&k2
-.. _/basic-auth/:user/:passwd: http://httpbin.org/basic-auth/user/passwd
-.. _/hidden-basic-auth/:user/:passwd: http://httpbin.org/hidden-basic-auth/user/passwd
-.. _/digest-auth/:qop/:user/:passwd: http://httpbin.org/digest-auth/auth/user/passwd
-.. _/stream/:n: http://httpbin.org/stream/20
-.. _/delay/:n: http://httpbin.org/delay/3
-.. _/drip: http://httpbin.org/drip?numbytes=5&duration=5&code=200
-.. _/range/:n: http://httpbin.org/range/1024
-.. _/html: http://httpbin.org/html
-.. _/robots.txt: http://httpbin.org/robots.txt
-.. _/deny: http://httpbin.org/deny
-.. _/cache: http://httpbin.org/cache
-.. _/cache/:n: http://httpbin.org/cache/60
+.. _/user-agent: http://hooked.dockerd.io/user-agent
+.. _/headers: http://hooked.dockerd.io/headers
+.. _/get: http://hooked.dockerd.io/get
+.. _/: http://hooked.dockerd.io/
+.. _/ip: http://hooked.dockerd.io/ip
+.. _/gzip: http://hooked.dockerd.io/gzip
+.. _/deflate: http://hooked.dockerd.io/deflate
+.. _/status/:code: http://hooked.dockerd.io/status/418
+.. _/response-headers: http://hooked.dockerd.io/response-headers?Content-Type=text/plain;%20charset=UTF-8&Server=httpbin
+.. _/redirect/:n: http://hooked.dockerd.io/redirect/6
+.. _/redirect-to?url=foo: http://hooked.dockerd.io/redirect-to?url=http://example.com/
+.. _/relative-redirect/:n: http://hooked.dockerd.io/relative-redirect/6
+.. _/cookies: http://hooked.dockerd.io/cookies
+.. _/cookies/set?name=value: http://hooked.dockerd.io/cookies/set?k1=v1&k2=v2
+.. _/cookies/delete?name: http://hooked.dockerd.io/cookies/delete?k1&k2
+.. _/basic-auth/:user/:passwd: http://hooked.dockerd.io/basic-auth/user/passwd
+.. _/hidden-basic-auth/:user/:passwd: http://hooked.dockerd.io/hidden-basic-auth/user/passwd
+.. _/digest-auth/:qop/:user/:passwd: http://hooked.dockerd.io/digest-auth/auth/user/passwd
+.. _/stream/:n: http://hooked.dockerd.io/stream/20
+.. _/delay/:n: http://hooked.dockerd.io/delay/3
+.. _/drip: http://hooked.dockerd.io/drip?numbytes=5&duration=5&code=200
+.. _/range/:n: http://hooked.dockerd.io/range/1024
+.. _/html: http://hooked.dockerd.io/html
+.. _/robots.txt: http://hooked.dockerd.io/robots.txt
+.. _/deny: http://hooked.dockerd.io/deny
+.. _/cache: http://hooked.dockerd.io/cache
+.. _/cache/:n: http://hooked.dockerd.io/cache/60
 .. _/bytes/:n: http://httpbin.org/bytes/1024
-.. _/stream-bytes/:n: http://httpbin.org/stream-bytes/1024
-.. _/links/:n: http://httpbin.org/links/10
-.. _/forms/post: http://httpbin.org/forms/post
-.. _/xml: http://httpbin.org/xml
-.. _/encoding/utf8: http://httpbin.org/encoding/utf8
+.. _/stream-bytes/:n: http://hooked.dockerd.io/stream-bytes/1024
+.. _/links/:n: http://hooked.dockerd.io/links/10
+.. _/forms/post: http://hooked.dockerd.io/forms/post
+.. _/xml: http://hooked.dockerd.io/xml
+.. _/encoding/utf8: http://hooked.dockerd.io/encoding/utf8
 
 
 DESCRIPTION
@@ -105,21 +105,21 @@ All endpoint responses are JSON-encoded.
 EXAMPLES
 --------
 
-$ curl http://httpbin.org/ip
+$ curl http://hooked.dockerd.io/ip
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
     {"origin": "24.127.96.129"}
 
-$ curl http://httpbin.org/user-agent
+$ curl http://hooked.dockerd.io/user-agent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
     {"user-agent": "curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8l zlib/1.2.3"}
 
-$ curl http://httpbin.org/get
+$ curl http://hooked.dockerd.io/get
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -131,14 +131,14 @@ $ curl http://httpbin.org/get
           "Connection": "close",
           "Content-Length": "",
           "Content-Type": "",
-          "Host": "httpbin.org",
+          "Host": "hooked.dockerd.io",
           "User-Agent": "curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8l zlib/1.2.3"
        },
        "origin": "24.127.96.129",
-       "url": "http://httpbin.org/get"
+       "url": "hooked.dockerd.io/get"
     }
 
-$ curl -I http://httpbin.org/status/418
+$ curl -I http://hooked.dockerd.io/status/418
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -150,7 +150,7 @@ $ curl -I http://httpbin.org/status/418
     x-more-info: http://tools.ietf.org/html/rfc2324
     Content-Length: 135
 
-$ curl https://httpbin.org/get?show\_env=1
+$ curl https://hooked.dockerd.io/get?show\_env=1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -218,9 +218,9 @@ Originally created by `Kenneth Reitz <http://kennethreitz.com/>`__.
 SEE ALSO
 --------
 
-- https://www.hurl.it
+- https://www.dockerd.io
 - http://requestb.in
 - http://python-requests.org
 
 .. |Build Status| image:: https://travis-ci.org/Runscope/httpbin.svg
-   :target: https://travis-ci.org/Runscope/httpbin
+   :target: https://travis-ci.org/phillydevs/apiv3
