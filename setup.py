@@ -13,11 +13,11 @@ setup(
     long_description=long_description,
 
     # The project URL.
-    url='https://github.com/Runscope/httpbin',
+    url='https://github.com/Phillydevs/apiv3',
 
     # Author details
     author='Runscope',
-    author_email='httpbin@runscope.com',
+    author_email='admin@dockerd.io',
 
     # Choose your license
     license='MIT',
